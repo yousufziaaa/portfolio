@@ -1,0 +1,220 @@
+/* defines global body styles unless overriden */
+body {
+    background-color: white;
+    font-family: 'DM Sans', sans-serif;
+    letter-spacing: -0.2px;
+    margin: 24;
+    padding: 0
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 400px;
+    margin: 40px 20px;
+}
+
+.about_section {
+    padding: 12px;
+}
+
+/* GLOBAL FONT FAMILIES + LINK */
+
+h1, h2 {
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #353535;
+    margin: 8px 0;
+    text-decoration: none;
+}
+
+p {
+    font-size: 14px;
+    color: gray;
+    line-height: 130%;
+}
+
+.back_link {
+    font-weight: 500;
+    font-size: 24px;
+    color: #353535;
+    font-style: italic;
+    text-decoration: none;
+}
+
+
+
+/* LINKS FOR MAIN PAGE */
+
+.link_box {
+    display: inline-block;
+    text-decoration: none;
+    padding: 2px 24px 2px 12px;
+    border-radius: 12px;
+    transition: background-color 0.3s ease-in-out;
+    margin-bottom: 10px;
+}
+
+.link_box p {
+    font-size: 14px;
+    color: gray;
+    margin: 8px 0;
+}
+
+.link_box:hover {
+    background-color: #f2f2f2;
+}
+
+
+/* WORK PAGE */
+
+.work_page {
+    padding: 24px 24px;
+}
+
+.work_link {
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-decoration: none;
+    padding: 2px 24px 2px 12px;
+    border-radius: 12px;
+    transition: background-color 0.3s ease-in-out;
+    margin-bottom: 4px;
+}
+
+.work_link:hover {
+    background-color: #f2f2f2;
+}
+
+.work_div {
+    display: inline-flex;
+}
+
+.work_link h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    color: #454545;
+    margin: 8px 0;
+    font-weight: 500;
+}
+
+.work_link p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    color: gray;
+    margin: 8px 0;
+    font-weight: 400;
+}
+
+.work_title h3 {
+    padding:0px 12px;
+}
+
+/* RESOURCE LINKS */
+#inspoList, #resourceList {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 4px; /* Space between each resource */
+}
+
+/* Resource box */
+.resource-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    background: white;
+    padding: 14px 16px;
+    border-radius: 10px;
+    /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);*/
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    width: 100%;
+    text-decoration: none; /* Remove default link underline */
+    /* color: black;  Ensure text color remains */
+    max-width: 500px; /* Keeps it compact */
+}
+
+/* Hover effect */
+.resource-item:hover {
+    background: rgba(0, 0, 0, 0.03);
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);*/
+}
+
+/* Favicon */
+.resource-item img {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+}
+
+/* Resource text container */
+.resource-info {
+    display: flex;
+    flex-grow: 1; /* Allows the text section to take up space */
+    align-items: center;
+    justify-content: space-between; /* Ensures title is left, URL is right */
+    padding-left: 12px; /* Space between icon and text */
+}
+
+/* Site name (main title) */
+.resource-title {
+    font-weight: 500;
+    font-size: 18px;
+    color: #111; /* Slightly darker for emphasis */
+    flex-grow: 1; /* Makes the title push the URL to the right */
+}
+
+/* Hover effect for links */
+.resource-info a:hover {
+    color: #0070f3; /* Soft blue hover effect */
+}
+
+/* Domain text (secondary) */
+.resource-info span {
+    color: gray;
+    font-size: 14px;
+}
+
+/* Each resource section (Inspo & Resources) */
+.resource-section {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 14px; /* Space between heading and list */
+}
+
+
+/* PLAY STYLING */
+/* Container for images */
+.play-container {
+    display: inline-block;
+    flex-direction: column; /* Stacks images vertically */
+    align-items: center; /* Centers images in the column */
+    gap: 40px; /* Adds spacing between images */
+    max-width: 500px; /* Keeps everything aligned */
+    margin: 0 auto; /* Centers container */
+    padding: 0px;
+    width: 100%;
+}
+
+/* Images */
+.play-container img {
+    width: 100%; /* Makes images responsive */
+    max-width: 500px; /* Ensures images don't get too large */
+    border-radius: 10px; /* Optional: Rounded corners */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.play-container img:hover {
+    transform: scale(1.03); /* Slight zoom effect on hover */
+}
