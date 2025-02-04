@@ -9,8 +9,8 @@ body {
 
 @media screen and (max-width: 768px) {
     body {
-        margin: 20px;  /* Reduce margin for mobile */
-        padding: 10px;  /* Reduce padding for mobile */
+        margin: 4px;  /* Reduce margin for mobile */
+        padding: 4px;  /* Reduce padding for mobile */
     }
     .container {
         display: flex;
