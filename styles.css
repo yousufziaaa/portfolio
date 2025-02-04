@@ -7,6 +7,20 @@ body {
     padding: 0
 }
 
+@media screen and (max-width: 768px) {
+    body {
+        margin: 20px;  /* Reduce margin for mobile */
+        padding: 10px;  /* Reduce padding for mobile */
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 380px;
+        margin: 24px 16px;
+    }
+}
+
 .container {
     display: flex;
     flex-direction: column;
